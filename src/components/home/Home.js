@@ -1,8 +1,9 @@
 import React from "react";
 import  Header  from "./Header";
 import Hero from "./Hero";
-import Footer from "./Footer";
 import GuideSection from "./GuideSection";
+import Footer from "./Footer";
+import InfoSection from "./InfoSection";
 
 function Home(){
     return(
@@ -10,6 +11,7 @@ function Home(){
             {/* <Header/> */}
             <Hero/>
             <GuideSection/>
+            <InfoSection/>
             <Footer/>
         </div>
     );
