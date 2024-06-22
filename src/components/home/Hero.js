@@ -1,5 +1,5 @@
 import React from "react";
-import arrow1 from "../../assest/arrow.svg";
+import arrow1 from "../../assets/arrow.svg";
 
 const Hero = () => {
   return (

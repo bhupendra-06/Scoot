@@ -1,7 +1,7 @@
 import React from "react";
-import Icon1 from '../../assest/home/mobile.svg';
-import Icon2 from '../../assest/home/riding-scooter.svg';
-import Icon3 from '../../assest/home/scooter.svg';
+import Icon1 from '../../assets/home/mobile.svg';
+import Icon2 from '../../assets/home/riding-scooter.svg';
+import Icon3 from '../../assets/home/scooter.svg';
 const GuideSection = () => {
   return (
     <div className="py-10 lg:flex overflow-hidden">

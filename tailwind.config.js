@@ -15,7 +15,8 @@ module.exports = {
         'hero-mask': '#2F3B59',
       },
       backgroundImage:{
-        'hero': "url(./assest/hero-bg.png)"
+        'hero': "url(./assets/hero-bg.png)",
+        'footer': "url(./assets/footer-bg.png)"
       },
 
     },
