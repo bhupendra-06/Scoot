@@ -4,7 +4,7 @@ import Icon2 from '../../assets/home/riding-scooter.svg';
 import Icon3 from '../../assets/home/scooter.svg';
 const GuideSection = () => {
   return (
-    <div className="py-10 lg:flex overflow-hidden">
+    <div className="py-10 lg:px-20 lg:flex overflow-hidden">
 
       <div className="my-4 p-5 text-center sm:text-start sm:flex sm:justify-center sm:items-start sm:max-w-[750px] sm:mx-auto lg:inline-block">
         <div className="mx-auto mb-6 w-24 h-24 flex items-center justify-center bg-yellow rounded-full">

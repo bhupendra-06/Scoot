@@ -16,7 +16,9 @@ module.exports = {
       },
       backgroundImage:{
         'hero': "url(./assets/hero-bg.png)",
-        'footer': "url(./assets/footer-bg.png)"
+        'footer-lg': "url(./assets/footer-lg-bg.png)",
+        'footer-md': "url(./assets/footer-md-bg.png)",
+        'footer-sm': "url(./assets/footer-sm-bg.png)",
       },
 
     },
