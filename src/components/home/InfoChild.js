@@ -13,6 +13,7 @@ const InfoChild = () => {
       </div>
       <div className='relative mb-4 grid place-items-center md:m-0 md:w-5/12 lg:w-1/3'>
         <img src={Image1} alt="info showing" className='mx-auto sm:w-8/12 md:w-full'/>
+        {/* ARROW */}
         <img
           className="absolute -z-0 h-36 bottom-5 -left-2/3 md:bottom-5 md:-left-5 lg:top-1/2 lg:left-1/2"
           src={arrow1}

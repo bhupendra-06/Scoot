@@ -19,6 +19,8 @@ module.exports = {
         'footer-lg': "url(./assets/footer-lg-bg.png)",
         'footer-md': "url(./assets/footer-md-bg.png)",
         'footer-sm': "url(./assets/footer-sm-bg.png)",
+        'about-md': "url(./assets/about/about-bg-md.png)",
+        'about-sm': "url(./assets/about/about-bg-sm.png)",
       },
 
     },

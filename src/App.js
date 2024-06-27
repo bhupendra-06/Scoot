@@ -1,14 +1,13 @@
 import Home from "./components/home/Home";
+import { Header } from "./components/home/Header";
 import About from "./components/about/About";
-import Location from "./components/Location";
-import Careers from "./components/Careers";
-import * as ReactDOM from "react-dom/client";
+import Location from "./components/location/Location";
+import Careers from "./components/careers/Careers";
+import Footer from "./components/Footer";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { Header } from "./components/home/Header";
-import Footer from "./components/Footer";
 
 function App() {
   const router =  createBrowserRouter([

@@ -1,13 +1,14 @@
 import React from "react";
 import PageHeading from "../PageHeading";
 
-const About = () => {
+const Careers = () => {
   return (
     <>
     <PageHeading/>
+    
 
     </>
   );
 };
 
-export default About;
+export default Careers;
