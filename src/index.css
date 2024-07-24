@@ -9,4 +9,8 @@
   /* font-family: 'Space Mono'; */
   font-family: sans-serif;
 }
+.guidesection {
+  position: relative;
+  overflow-x: hidden;
+}
 

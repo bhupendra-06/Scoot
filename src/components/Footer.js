@@ -4,17 +4,36 @@ import Twitter from "../assets/twitter.svg";
 import Insta from "../assets/insta.svg";
 import PlayStore from "../assets/playstore.svg";
 import AppStore from "../assets/appstore.svg";
-
 import { Link } from "react-router-dom";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
 
 const Footer = () => {
+
+  useGSAP(()=>{
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".gsapFooter",{
+      scale: 1.5,
+      duration: 1.2,
+      ease: "elastic.out(0.5,0.3)",
+      scrollTrigger:{
+        trigger: ".gsapFooter",
+        scroller: "body",
+        start: "top 90%",
+      }
+    });
+
+  });
+
+
   return (
     <footer>
       <div className="w-full p-16 flex gap-10 flex-col sm:flex-row items-center justify-around bg-footer-sm md:bg-footer-md lg:bg-footer-lg bg-cover bg-bottom">
-        <b className="lg:w-1/3 xl:w-1/4 text-center text-white text-3xl sm:text-4xl">
+        <b className="gsapFooter lg:w-1/3 xl:w-1/4 text-center text-white text-3xl sm:text-4xl">
           Sign up and Scoot up today
         </b>
-        <div className="flex gap-2 px-4">
+        <div className="gsapScrollU flex gap-2 px-4">
           <div>
             <img src={AppStore} alt="store" />
           </div>
