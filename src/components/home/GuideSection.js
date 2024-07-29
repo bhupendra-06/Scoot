@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Icon1 from "../../assets/home/mobile.svg";
 import Icon2 from "../../assets/home/riding-scooter.svg";
 import Icon3 from "../../assets/home/scooter.svg";
@@ -9,6 +9,8 @@ import { ScrollTrigger } from "gsap/all";
 const GuideSection = () => {
 
   //GSAP SCROLLTRIGGER ANIMATION
+
+  const gsapGuide = useRef(null);
   useGSAP(()=>{
 
     gsap.registerPlugin(ScrollTrigger);
@@ -16,18 +18,23 @@ const GuideSection = () => {
       y: 200,
       duration: 1,
       opacity: 0,
+      // zIndex: 1,
       stagger: 0.2,
       scrollTrigger: {
         trigger: ".gsapSection",
         scroller: "body",
-        start: "top 80%",
-        end: "top 10%",
-        // scrub: 2,
+        // markers: true,
+        start: "-10% 80%",
+        end: "-150% 50%",
+        toggleActions: "play none reverse none",
       }
+    });
+    gsap.to(".gsapLine", {
+      // zIndex: -100,
     });
     
 
-  });
+  },[]);
   
   return (
     <div className="body py-10 lg:px-20 lg:flex overflow-hidden">
@@ -59,10 +66,10 @@ const GuideSection = () => {
           </p>
         </div>
       </div>
-      <div className="gsapSection my-4 p-5 text-center sm:text-start sm:flex sm:justify-center sm:items-start sm:max-w-[750px] sm:mx-auto lg:inline-block z-0">
+      <div className="gsapSection my-4 p-5 text-center sm:text-start sm:flex sm:justify-center sm:items-start sm:max-w-[750px] sm:mx-auto lg:inline-block -z-50">
         <div className="relative mx-auto mb-6 w-24 h-24 flex items-center justify-center bg-yellow rounded-full ">
           <img alt="icon" src={Icon3} width="45px" />
-          {/*Below is for the grey line behind the icons */}
+          {/*Below is for the Grey line behind the icons */}
           <div className="gsapLine hidden sm:inline absolute left-1/2 top-1/2 origin-left -rotate-90 lg:rotate-180 h-4 w-[14000px] bg-light-grey -z-10"></div>
         </div>
         <div className="sm:basis-3/4">

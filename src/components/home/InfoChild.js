@@ -4,7 +4,7 @@ import arrow1 from "../../assets/arrow.svg";
 const InfoChild = ({ n, image, msgs, defination }) => {
   return (
     <div id={`gsapInfo${n}`} className="my-6 px-5 flex flex-col-reverse justify-center content-center md:my-16 md:px-20 md:flex-row md:gap-5 md:even:flex-row-reverse md:justify-between lg:px-24">
-      <div className="flex flex-col justify-center md:w-1/2 lg:w-2/5">
+      <div className="gsapText flex flex-col justify-center md:w-1/2 lg:w-2/5">
         <h3 className="my-4 text-center md:text-start text-2xl font-bold ">
           {msgs}
         </h3>

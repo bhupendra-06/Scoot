@@ -4,8 +4,7 @@ import PageHeading from "../PageHeading";
 const Careers = () => {
   return (
     <>
-    <PageHeading/>
-    
+      <PageHeading />
 
     </>
   );
