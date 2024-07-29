@@ -51,9 +51,9 @@ export const Header = () => {
     burger.addEventListener("click",()=>{
       tl.play();
     });
-    cross.addEventListener("click",()=>{
-      tl.reverse();
-    });
+    // cross.addEventListener("click",()=>{
+    //   tl.reverse();
+    // });
     // TO HIDE THE MENU WHEN CLICKING ITS ELEMENTS
     const nav = document.querySelectorAll(".Nav");
     nav.forEach((nv)=>{
@@ -101,9 +101,9 @@ export const Header = () => {
         <Link to="/about" className="Nav py-4 px-10 text-3xl hover:text-yellow hover hover:bg-gray-500 focus:text-yellow ease-in">About</Link>
         <Link to="/location" className="Nav py-4 px-10 text-3xl hover:text-yellow hover hover:bg-gray-500 focus:text-yellow ease-in">Location</Link>
         <Link to="/careers" className="Nav py-4 px-10 text-3xl hover:text-yellow hover hover:bg-gray-500 focus:text-yellow ease-in">Careers</Link>
-        <div id="cross" className="m-4 absolute top-0">
+        {/* <div id="cross" className="m-4 absolute top-0">
         <BurgerIcon/>
-        </div>
+        </div> */}
       </nav>
     </div>
   );
