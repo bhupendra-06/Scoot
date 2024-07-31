@@ -1,7 +1,7 @@
 import React from "react";
 import arrow1 from "../../assets/arrow.svg";
 
-const InfoChild = ({ n, image, msgs, defination }) => {
+const InfoChild = ({ n, image, msgs, defination, buttonText }) => {
   return (
     <div id={`gsapInfo${n}`} className="my-6 px-5 flex flex-col-reverse justify-center content-center md:my-16 md:px-20 md:flex-row md:gap-5 md:even:flex-row-reverse md:justify-between lg:px-24">
       <div className="flex flex-col justify-center md:w-1/2 lg:w-2/5">
@@ -12,7 +12,7 @@ const InfoChild = ({ n, image, msgs, defination }) => {
           {defination}
         </p>
         <button className="my-7 mx-auto md:ml-0 px-5 py-2 rounded-sm border-2 border-yellow bg-yellow text-white font-bold duration-200 hover:bg-transparent hover:text-yellow">
-          Learn More
+          {buttonText}
         </button>
       </div>
       <div className="relative mb-4 grid place-items-center md:m-0 md:w-5/12 lg:w-1/3">

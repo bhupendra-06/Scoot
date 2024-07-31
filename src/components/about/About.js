@@ -4,7 +4,9 @@ import PageHeading from "../PageHeading";
 const About = () => {
   return (
     <>
-    <PageHeading/>
+    <PageHeading 
+      heading="About" 
+    />
 
     </>
   );

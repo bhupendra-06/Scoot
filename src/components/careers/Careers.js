@@ -1,11 +1,17 @@
 import React from "react";
 import PageHeading from "../PageHeading";
+import InfoSection from "../home/InfoSection";
 
 const Careers = () => {
   return (
     <>
-    <PageHeading/>
+    <PageHeading 
+      heading="Careers" 
+    />
     
+    <InfoSection
+        
+    />
 
     </>
   );

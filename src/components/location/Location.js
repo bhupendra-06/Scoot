@@ -27,7 +27,9 @@ const Location = () => {
 
   return (
     <>
-      <PageHeading />
+      <PageHeading 
+      heading="Locations" 
+    />
       <div className="w-full p-14 px-2 sm:p-24">
         <img src={Map} alt="location's map" width="90%" className="mx-auto" />
       </div>
