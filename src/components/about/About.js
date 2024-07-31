@@ -5,7 +5,6 @@ const About = () => {
   return (
     <>
     <PageHeading/>
-
     </>
   );
 };

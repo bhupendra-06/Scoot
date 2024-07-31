@@ -5,6 +5,7 @@ import Location from "./components/location/Location";
 import Careers from "./components/careers/Careers";
 import Footer from "./components/Footer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Contact from "./components/contact/Contact";
 
 function App() { 
 
@@ -46,6 +47,16 @@ function App() {
         <>
           <Header />
           <Careers />
+          <Footer />
+        </>
+      ),
+    },
+    {
+      path: "/contact",
+      element: (
+        <>
+          <Header />
+          <Contact />
           <Footer />
         </>
       ),
