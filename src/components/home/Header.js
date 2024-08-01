@@ -47,7 +47,7 @@ export const Header = () => {
     tl.pause();
 
     const burger = document.getElementById("burger");
-    const cross = document.getElementById("cross");
+    // const cross = document.getElementById("cross");
     burger.addEventListener("click",()=>{
       tl.play();
     });
@@ -67,7 +67,7 @@ export const Header = () => {
     });
     const body = document.querySelector("body");
     body.addEventListener("click",()=>{
-      if(navbar.style.width == "70%"){
+      if(navbar.style.width === "70%"){
         tl.reverse();
       }
     });
@@ -77,11 +77,12 @@ export const Header = () => {
   return (
     <div className="w-full px-20 flex items-center justify-center md:justify-between">
       <div className="flex">
-        <Link to="/"><div className="gsapLogo p-5 text-3xl font-extrabold text-dark-navy">scoot</div></Link>
+        <Link to="/"><div className="gsapLogo p-5 text-3xl font-extrabold text-black-navy">scoot</div></Link>
         <ul className="ml-10 hidden md:flex items-center text-dim-grey">
           <Link to="/about" className="gsapNav p-5 hover:text-yellow focus:text-yellow">About</Link>
           <Link to="/location" className="gsapNav p-5 hover:text-yellow focus:text-yellow">Location</Link>
           <Link to="/careers" className="gsapNav p-5 hover:text-yellow focus:text-yellow">Careers</Link>
+          <Link to="/contact" className="gsapNav p-5 hover:text-yellow focus:text-yellow">Contact</Link>
         </ul>
       </div>
       <Link to="/">
@@ -101,6 +102,7 @@ export const Header = () => {
         <Link to="/about" className="Nav py-4 px-10 text-3xl hover:text-yellow hover hover:bg-gray-500 focus:text-yellow ease-in">About</Link>
         <Link to="/location" className="Nav py-4 px-10 text-3xl hover:text-yellow hover hover:bg-gray-500 focus:text-yellow ease-in">Location</Link>
         <Link to="/careers" className="Nav py-4 px-10 text-3xl hover:text-yellow hover hover:bg-gray-500 focus:text-yellow ease-in">Careers</Link>
+        <Link to="/contact" className="Nav py-4 px-10 text-3xl hover:text-yellow hover hover:bg-gray-500 focus:text-yellow ease-in">Contact</Link>
         {/* <div id="cross" className="m-4 absolute top-0">
         <BurgerIcon/>
         </div> */}

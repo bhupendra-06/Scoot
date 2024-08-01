@@ -57,6 +57,9 @@ const Footer = () => {
             <Link to="/careers" className="p-3 md:p-5 hover:text-yellow">
               Careers
             </Link>
+            <Link to="/contact" className="p-3 md:p-5 hover:text-yellow">
+              Contact
+            </Link>
           </ul>
         </div>
         <div className="flex gap-6 my-5 hover:*:scale-110 *:duration-75 *:cursor-pointer">

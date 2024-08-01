@@ -28,6 +28,7 @@ const About = () => {
 
   return (
     <>
+
     <PageHeading 
       heading="About" 
     />
@@ -35,7 +36,6 @@ const About = () => {
     <InfoSection
         myData = {data}
     />
-    
     </>
   );
 };
