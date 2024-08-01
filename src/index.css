@@ -13,4 +13,30 @@
   position: relative;
   overflow-x: hidden;
 }
+/* NAVBAR MENU FOR MOBILE SCREEN */
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* right: -70%; */
+  z-index: 50;
+  height: 100vh;
+  width: 0;
+  max-width: 20rem;
+  /* width: 70%; */
+  background: #616161aa;
+  backdrop-filter: blur(8px);
+  font-size: 3rem;
+  font-weight: 700;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
+}
+
+.navbar Link {
+  background-color: aqua;
+  display: none;
+  visibility: hidden;
+}

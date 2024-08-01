@@ -1,25 +1,26 @@
 import React from "react";
 import InfoChild from "./InfoChild";
-import Image1 from "../../assets/home/image1.png";
-import Image2 from "../../assets/home/image2.png";
-import Image3 from "../../assets/home/image3.png";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 
-const InfoSection = () => {
+const InfoSection = ({ myData }) => {
+
   //GSAP SCROLLTRIGGER ANIMATION
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
+
     gsap.from("#gsapInfo1", {
       x: 300,
       duration: 1,
       opacity: 0,
+      ease: "power1.out",
       scrollTrigger: {
         trigger: "#gsapInfo1",
-        start: "top 90%",
-        end: "top 10%",
-        scrub: 5,
+        start: "0% 70%",
+        end: "-70% 30%",
+        toggleActions: "play none reverse none",
+        // scrub: true,
       },
     });
     gsap.from("#gsapInfo2", {
@@ -28,9 +29,9 @@ const InfoSection = () => {
       opacity: 0,
       scrollTrigger: {
         trigger: "#gsapInfo2",
-        start: "top 80%",
-        end: "top 10%",
-        scrub: 5,
+        start: "0% 70%",
+        end: "-70% 30%",
+        toggleActions: "play none reverse none",
       },
     });
     gsap.from("#gsapInfo3", {
@@ -39,27 +40,23 @@ const InfoSection = () => {
       opacity: 0,
       scrollTrigger: {
         trigger: "#gsapInfo3",
-        start: "top 80%",
-        end: "top 10%",
-        scrub: 2,
+        start: "top 70%",
+        start: "0% 70%",
+        end: "-70% 30%",
+        toggleActions: "play none reverse none",
       },
     });
-    gsap.from(".gsapText", {
-      x: -200,
-      duration: 1,
-      opacity: 0,
-      scrollTrigger: {
-        trigger: ".gsapText",
-        // markers: true,
-        start: "top 60%",
-        end: "top 30%",
-        // scrub: 5,
-      },
-    });
+
   });
+
+
+
   return (
     <div className="guidesection mb-4">
-      <InfoChild
+
+      <InfoChild data={myData} />
+
+      {/* <InfoChild
         image={Image1}
         msgs="Easy to use riding telemetry"
         defination="The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app."
@@ -79,7 +76,7 @@ const InfoSection = () => {
         defination="Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month."
         buttonText="Learn More"
         n="3"
-      />
+      /> */}
     </div>
   );
 };

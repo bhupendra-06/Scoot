@@ -6,7 +6,7 @@ import Careers from "./components/careers/Careers";
 import Footer from "./components/Footer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-function App() {
+function App() { 
 
 
   const router = createBrowserRouter([
