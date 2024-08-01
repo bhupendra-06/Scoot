@@ -5,8 +5,33 @@ import { GrLocation } from "react-icons/gr";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
+// import { useRef, useEffect } from 'react';
 
 const Contact = () => {
+  // GSAP ANIMATION
+    useGSAP(() => {
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.from(".gsapUp", {
+        y: 100,
+        duration: 1,
+        opacity: 0,
+        stagger: 0.2,
+      });
+      gsap.from(".gsapL", {
+        x: 150,
+        duration: 1,
+        delay:0.8,
+        opacity: 0,
+        stagger: 0.3,
+
+      });
+    }, []);
+
+
+  //   FORM VALUES
   const initValues = { name: "", email: "", phone: "", message: "" };
 
   const initState = { isLoading: false, error: "", values: initValues };
@@ -37,7 +62,7 @@ const Contact = () => {
               <div className="-mx-4 flex flex-wrap lg:justify-between">
                 <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
                   <div className="mb-12 px-[20px] pt-10  sm:px-[1px]  max-w-[570px] lg:mb-0">
-                    <h2 className="mb-4 text-[25px] sm:text-4xl font-bold uppercase text-yellow">
+                    <h2 className="gsapUp mb-4 text-[25px] sm:text-4xl font-bold uppercase text-yellow">
                       get in touch with us
                     </h2>
                     <p className="mb-9 text-sm leading-5 gsapUp text-dim-grey text-center md:text-justify">
@@ -47,7 +72,7 @@ const Contact = () => {
                       the way. Feel free to get in touch using the contact
                       details provided below.
                     </p>
-                    <div className="mb-8 flex w-full max-w-[370px]">
+                    <div className="gsapL mb-8 flex w-full max-w-[370px]">
                       <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden  rounded bg-light-yellow text-yellow sm:h-[70px] sm:max-w-[70px]">
                         <GrLocation className="text-2xl" />
                       </div>
@@ -61,7 +86,7 @@ const Contact = () => {
                       </div>
                     </div>
 
-                    <div className="mb-8 flex w-full max-w-[370px]">
+                    <div className="gsapL mb-8 flex w-full max-w-[370px]">
                       <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-light-yellow text-yellow sm:h-[70px] sm:max-w-[70px]">
                         <FaWhatsapp className="text-2xl" />
                       </div>
@@ -74,7 +99,7 @@ const Contact = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="mb-8 flex w-full max-w-[370px] text-black">
+                    <div className="gsapL mb-8 flex w-full max-w-[370px] text-black">
                       <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-light-yellow text-yellow sm:h-[70px] sm:max-w-[70px]">
                         <MdOutlineLocalPhone className="text-3xl" />
                       </div>
@@ -87,8 +112,8 @@ const Contact = () => {
                         </p>
                       </div>
                     </div>
-                
-                    <div className="mb-8 flex w-full max-w-[370px] text-black">
+
+                    <div className="gsapL mb-8 flex w-full max-w-[370px] text-black">
                       <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-light-yellow text-yellow sm:h-[70px] sm:max-w-[70px]">
                         <MdEmail className="text-3xl" />
                       </div>
@@ -104,8 +129,8 @@ const Contact = () => {
                   </div>
                 </div>
                 {/* CONTACT FORM */}
-                <div className="w-full lg:pt-24 px-4 lg:w-1/2 xl:w-5/12">
-                  <div className="relative rounded-lg bg-light-yellow p-8 shadow-lg sm:p-12">
+                <div className="gsapUp w-full lg:pt-24 px-4 lg:w-1/2 xl:w-5/12">
+                  <div className="relative rounded-lg bg-light-yellow p-8 border shadow-md sm:p-12">
                     <form>
                       <ContactInputBox
                         type="text"

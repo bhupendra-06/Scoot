@@ -1,4 +1,3 @@
-import React, { useRef } from "react";
 import Icon1 from "../../assets/home/mobile.svg";
 import Icon2 from "../../assets/home/riding-scooter.svg";
 import Icon3 from "../../assets/home/scooter.svg";
@@ -10,7 +9,6 @@ const GuideSection = () => {
 
   //GSAP SCROLLTRIGGER ANIMATION
 
-  const gsapGuide = useRef(null);
   useGSAP(()=>{
 
     gsap.registerPlugin(ScrollTrigger);
@@ -30,7 +28,7 @@ const GuideSection = () => {
       }
     });
     gsap.to(".gsapLine", {
-      // zIndex: -100,
+      // zIndex: -10,
     });
     
 

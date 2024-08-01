@@ -47,7 +47,7 @@ export const Header = () => {
     tl.pause();
 
     const burger = document.getElementById("burger");
-    const cross = document.getElementById("cross");
+    // const cross = document.getElementById("cross");
     burger.addEventListener("click",()=>{
       tl.play();
     });
@@ -67,7 +67,7 @@ export const Header = () => {
     });
     const body = document.querySelector("body");
     body.addEventListener("click",()=>{
-      if(navbar.style.width == "70%"){
+      if(navbar.style.width === "70%"){
         tl.reverse();
       }
     });

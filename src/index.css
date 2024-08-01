@@ -8,7 +8,15 @@
   box-sizing: border-box;
   /* font-family: 'Space Mono'; */
   font-family: sans-serif;
-}
+} 
+/* .gsapLogo {
+  font-family: fantasy;
+  font-weight: 200;
+  color: rgb(255, 200, 0);
+  border-inline: 3px solid;
+  border-radius: 100px;
+} */
+ 
 .guidesection {
   position: relative;
   overflow-x: hidden;
