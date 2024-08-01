@@ -26,7 +26,7 @@ const Contact = () => {
         delay:0.8,
         opacity: 0,
         stagger: 0.3,
-
+        
       });
     }, []);
 
@@ -56,7 +56,7 @@ const Contact = () => {
     <>
       <div className="duration-300 bg-gray flex items-center justify-center">
         <div className=" lg:h-fit overflow-hidden text-white w-full">
-          <PageHeading />
+          <PageHeading heading="Contact" />
           <section className="p-2 md:px-20 relative z-10 overflow-hidden">
             <div className="container">
               <div className="-mx-4 flex flex-wrap lg:justify-between">
