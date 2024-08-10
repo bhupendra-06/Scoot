@@ -59,6 +59,7 @@ export const Header = () => {
     nav.forEach((nv)=>{
       nv.addEventListener("click",()=>{
         tl.reverse();
+        
       });
     });
     const navbar = document.querySelector(".navbar");
@@ -96,7 +97,7 @@ export const Header = () => {
       </div>
 
 
-        {/* NAVBAR MENU IN SMALL SCREEN */}
+        {/* SMALL SCREEN NAVBAR MENU */}
       <nav className="navbar css">
         <Link to="/" className="Nav py-4 px-10 text-3xl hover:text-yellow hover hover:bg-gray-500 focus:text-yellow ease-in">Home</Link>
         <Link to="/about" className="Nav py-4 px-10 text-3xl hover:text-yellow hover hover:bg-gray-500 focus:text-yellow ease-in">About</Link>

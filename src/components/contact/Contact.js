@@ -85,7 +85,6 @@ const Contact = () => {
                         </p>
                       </div>
                     </div>
-
                     <div className="gsapL mb-8 flex w-full max-w-[370px]">
                       <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-light-yellow text-yellow sm:h-[70px] sm:max-w-[70px]">
                         <FaWhatsapp className="text-2xl" />
@@ -112,7 +111,6 @@ const Contact = () => {
                         </p>
                       </div>
                     </div>
-
                     <div className="gsapL mb-8 flex w-full max-w-[370px] text-black">
                       <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-light-yellow text-yellow sm:h-[70px] sm:max-w-[70px]">
                         <MdEmail className="text-3xl" />

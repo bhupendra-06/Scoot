@@ -12,6 +12,10 @@
   font-family: "Ubuntu", sans-serif;
   /* font-family: sans-serif; */
 } 
+body {
+  background: white;
+}
+
 .guidesection {
   position: relative;
   overflow-x: hidden;
@@ -40,4 +44,32 @@
   background-color: aqua;
   display: none;
   visibility: hidden;
+}
+
+/* FAQ Section */
+details {
+  width: 100%;
+  padding: 4px;
+  background-color: transparent;
+  transition: ease 1s;
+  cursor: pointer;  
+}
+details summary::marker {
+  visibility: none;
+}
+details summary{
+  margin-bottom: 1px;
+  padding: 20px;
+  font-size: 20px;
+  background-color: #aeaeae;
+  text-align: start;
+  transition: ease 1s;
+  list-style: none;
+}
+details p {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #aeaeae;
+  text-align: start;
+  transition: ease 0.5s;
 }

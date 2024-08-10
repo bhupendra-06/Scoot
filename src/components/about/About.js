@@ -7,6 +7,7 @@ import AboutScoot from "./AboutScoot";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
+import FAQ from "./FAQ";
 
 const About = () => {
   const data = [
@@ -49,6 +50,7 @@ const About = () => {
     <>
       <PageHeading heading="About" />
       <AboutScoot />
+      <FAQ/>
 
       {/* <InfoSection
         myData = {data}
