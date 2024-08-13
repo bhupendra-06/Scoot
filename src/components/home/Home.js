@@ -37,7 +37,7 @@ function Home(){
     ]
 
     return(
-        <div>
+        <div className="w-screen overflow-hidden">
             <Hero/>
             <GuideSection/>
             <InfoSection myData={data} />

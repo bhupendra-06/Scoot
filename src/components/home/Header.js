@@ -42,7 +42,7 @@ export const Header = () => {
     tl.from(".Nav", {
       x: 100,
       opacity: 0,
-      duration: 0.5,
+      duration: 0.4,
       stagger: 0.1,
     });
     tl.pause();
@@ -94,22 +94,20 @@ export const Header = () => {
           </button>
       </Link>
       {/* HamBurger icon */}
-      <div id="burger" className="absolute my-auto right-2 md:hidden">
+      <div id="burger" className="absolute my-auto right-3 md:hidden">
         <BurgerIcon />
       </div>
 
 
         {/* SMALL SCREEN NAVBAR MENU */}
-      <nav className="navbar css">
+      <nav className="navbar css md:hidden">
         <Link to="/" className="Nav py-4 px-10 text-3xl hover:text-yellow hover hover:bg-gray-500 focus:text-yellow ease-in">Home</Link>
         <Link to="/about" className="Nav py-4 px-10 text-3xl hover:text-yellow hover hover:bg-gray-500 focus:text-yellow ease-in">About</Link>
         <Link to="/location" className="Nav py-4 px-10 text-3xl hover:text-yellow hover hover:bg-gray-500 focus:text-yellow ease-in">Location</Link>
         <Link to="/careers" className="Nav py-4 px-10 text-3xl hover:text-yellow hover hover:bg-gray-500 focus:text-yellow ease-in">Careers</Link>
         <Link to="/contact" className="Nav py-4 px-10 text-3xl hover:text-yellow hover hover:bg-gray-500 focus:text-yellow ease-in">Contact</Link>
-        {/* <div id="cross" className="m-4 absolute top-0">
-        <BurgerIcon/>
-        </div> */}
       </nav>
+      
     </div>
   );
 };
