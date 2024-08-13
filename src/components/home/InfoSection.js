@@ -37,6 +37,7 @@ const InfoSection = ({ myData }) => {
     gsap.from("#gsapInfo3", {
       x: 300,
       duration: 1,
+      delay: 0.2,
       opacity: 0,
       scrollTrigger: {
         trigger: "#gsapInfo3",
@@ -51,7 +52,7 @@ const InfoSection = ({ myData }) => {
 
 
   return (
-    <div className="guidesection mb-4">
+    <div className="info-section mb-4">
 
       <InfoChild data={myData} />
     </div>

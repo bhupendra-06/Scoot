@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../assets/logo-2.png";
 import BurgerIcon from "./BurgerIcon";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
@@ -76,9 +77,10 @@ export const Header = () => {
 
   })
   return (
-    <div className="w-full px-20 flex items-center justify-center md:justify-between">
+    <div className="w-full px-5 md:px-20 flex items-center md:justify-between">
       <div className="flex">
-        <Link to="/"><div className="gsapLogo p-5 text-3xl font-extrabold text-black-navy">scoot</div></Link>
+        {/* <Link to="/"><div className="gsapLogo p-5 text-3xl font-extrabold text-black-navy">scoot</div></Link> */}
+        <Link to="/"><div className="my-2 w-16 h-16 overflow-hidden relative"><img src={logo} className="h-full object-cover"/></div></Link>
         <ul className="ml-10 hidden md:flex items-center text-dim-grey">
           <Link to="/about" className="gsapNav p-5 hover:text-yellow focus:text-yellow">About</Link>
           <Link to="/location" className="gsapNav p-5 hover:text-yellow focus:text-yellow">Location</Link>
@@ -92,7 +94,7 @@ export const Header = () => {
           </button>
       </Link>
       {/* HamBurger icon */}
-      <div id="burger" className="absolute my-auto left-2 md:hidden">
+      <div id="burger" className="absolute my-auto right-2 md:hidden">
         <BurgerIcon />
       </div>
 

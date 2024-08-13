@@ -68,7 +68,7 @@ const GuideSection = () => {
         <div className="relative mx-auto mb-6 w-24 h-24 flex items-center justify-center bg-yellow rounded-full ">
           <img alt="icon" src={Icon3} width="45px" />
           {/*Below is for the Grey line behind the icons */}
-          <div className="gsapLine hidden sm:inline absolute left-1/2 top-1/2 origin-left -rotate-90 lg:rotate-180 h-4 w-[14000px] bg-light-grey -z-10"></div>
+          <div className="gsapLine hidden lg:inline absolute left-1/2 top-1/2 origin-left -rotate-90 lg:rotate-180 h-4 w-[14000px] bg-light-grey -z-10"></div>
         </div>
         <div className="sm:basis-3/4">
           <h4 className="text-xl font-bold text-black-navy">Enjoy the ride</h4>

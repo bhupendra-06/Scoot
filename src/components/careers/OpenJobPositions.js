@@ -39,9 +39,8 @@ useGSAP(()=>{
     const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".jobs",
-          start: "top 90%",
-          end: "top 10%",
-          markers: true, // Remove this once you’re done debugging
+          start: "20% 90%",
+          end: "20% 10%",
         },
       });
     

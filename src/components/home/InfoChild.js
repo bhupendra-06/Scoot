@@ -19,8 +19,7 @@ const InfoChild = ({data}) => {
           </button>
         </div>
         <div className="relative mb-4 grid place-items-center md:m-0 md:w-5/12 lg:w-1/3">
-          <img
-            
+          <img 
             src={allData.image}
             alt="info showing"
             className="mx-auto sm:w-8/12 md:w-full rounded-full"
